@@ -28,9 +28,9 @@ var role = "Information Technology";
 var work= {
  "jobs":[
   {
-"position": "student worker";
-"employer":"ATS";
-"years":3;
+"position": "student worker",
+"employer":"ATS",
+"years":3
 }
 ]
 }

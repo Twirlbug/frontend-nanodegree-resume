@@ -81,7 +81,7 @@ var work= {
 }
 ]
 }
-
+var displayWork=function(){
 for (job in work.jobs){
 $("#workExperience").append(HTMLworkStart);
 
@@ -95,6 +95,8 @@ $(".work-entry:last").append(formattedDates);
 
 var formattedDesc = HTMLworkDescription.replace("%data%", work.jobs[job].desc);
 $(".work-entry:last").append(formattedDesc);
+}
+
 }
 
 var education={

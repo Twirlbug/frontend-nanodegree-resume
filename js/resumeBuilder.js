@@ -144,11 +144,11 @@ function displayProjects(){
 		$("#projects").append(HTMLprojectStart);
 		
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].name);
-		$(".program-entry:last").append(formattedTitle);
+		$(".project-entry:last").append(formattedTitle);
 		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].date);
-		$(".program-entry:last").append(formattedDates);
+		$(".project-entry:last").append(formattedDates);
 		var formattedDesc = HTMLprojectDescription.replace("%data%", projects.projects[project].type);
-		$(".program-entry:last").append(formattedDesc);
+		$(".project-entry:last").append(formattedDesc);
 	
 	}
 	}

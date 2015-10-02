@@ -25,10 +25,15 @@ var role = "Information Technology";
  };
  bio.skills= skills;
 
-var work= {};
-work.position= "student worker";
-work.employer="ATS";
-work.years=3;
+var work= {
+ "jobs":[
+  {
+"position": "student worker";
+"employer":"ATS";
+"years":3;
+}
+]
+};
 
 var education={
     "schools": [

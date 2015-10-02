@@ -26,6 +26,9 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
    "skills": skills
  }
   
+  var formattedMobile = HTMLemail.replace("%data%",  bio.contacts.email);
+  $("#header").prepend(formattedMobile);
+  
 
 if(bio.skills.length > 0){
  $("#header").append(HTMLskillsStart);

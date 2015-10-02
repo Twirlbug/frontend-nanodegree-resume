@@ -66,17 +66,17 @@ if(bio.skills.length > 0){
 var work= {
  "jobs":[
   {
-"position": "student worker",
-"employer":"ATS",
-"dates":"2013-2015",
-"des": "Desk worker",
-"years":3
+"position": "Extra Hand",
+"employer":"PLE",
+"dates":"2013-2014",
+"desc": "Lawn work",
+"years":1
 },
 {
 "position": "Assistant",
 "employer":"Trancendental Golf",
 "dates":"2012-2012",
-"des": "Junior Pro",
+"desc": "Junior Pro",
 "years":.5
 }
 ]

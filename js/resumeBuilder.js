@@ -36,7 +36,7 @@ var role = "Information Technology";
  $("#skills").append(formattedSkill);
  formattedSkill=HTMLskills.replace("%data%", skills[3]);
  $("#skills").append(formattedSkill);
-}/*
+}*/
 
 var work= {
  "jobs":[

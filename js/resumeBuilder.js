@@ -68,15 +68,15 @@ var work= {
   {
 "position": "student worker",
 "employer":"ATS",
-"dates":"2013-2015"
-"des": "Desk worker"
+"dates":"2013-2015",
+"des": "Desk worker",
 "years":3
 },
 {
 "position": "Assistant",
 "employer":"Trancendental Golf",
-"dates":"2012-2012"
-"des": "Junior Pro"
+"dates":"2012-2012",
+"des": "Junior Pro",
 "years":.5
 }
 ]

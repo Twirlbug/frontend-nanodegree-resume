@@ -36,7 +36,7 @@ $('#main).append(internationalizeButton);*/
       "email":"twirlbug@gmail.com",
       "github":"Twirlbug",
 	  "mobile":"262-748-5667",
-	  "location":"Kenosha, Wi"},
+	  "location":"Pleasant Prairie, Wisconsin"},
  "skills": skills
  }
  
@@ -53,6 +53,7 @@ $('#main).append(internationalizeButton);*/
   var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
   $("#header").append(formattedLocation);
   var img = document.createElement("img");
+  
  
 img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
 img.style.width = '10%'
@@ -77,6 +78,7 @@ if(bio.skills.length > 0){
 var work= {
  "jobs":[
   {
+ "location":"Kenosha, Wisconsin",
 "position": "Extra Hand",
 "employer":"PLE",
 "dates":"2013-2014",
@@ -84,6 +86,7 @@ var work= {
 "years":1
 },
 {
+"location":"Pleasant Prairie, Wisconsin",
 "position": "Assistant",
 "employer":"Trancendental Golf",
 "dates":"2012-2012",
@@ -95,7 +98,7 @@ var work= {
 function displayWork(){
 for (job in work.jobs){
 $("#workExperience").append(HTMLworkStart);
-
+var formattedLoc = HTMLworkLocation.replace("%data%", work.jobs[job].location)
 var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
 var formattedEmployerTitle = formattedEmployer + formattedTitle;
@@ -116,7 +119,7 @@ var education={
     "schools": [
         {
             "name": "Cornell College",
-            "city": "Mount Vernon, IA, US",
+            "location": "Mount Vernon, IA, US",
             "degree": "BA",
             "major": "Computer Science"
         }
@@ -162,4 +165,4 @@ var y = loc.pageY;
 logClicks(x,y);
 });
 
-
+$("#mapDiv").append(googleMap);

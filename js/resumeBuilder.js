@@ -67,4 +67,6 @@ for (jobs in work.jobs){
  $(#workExperience).append(HTMLworkStart);
  var formatEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
   var formatTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
+   var formatEmpTitle = formatEmployer+formatTitle;
+   $(".work-entry:last").append(formatEmptitle);
 }

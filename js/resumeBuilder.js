@@ -1,21 +1,8 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
- var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
-
- //$("#main").append("Nicole Geiger ");
 var role = "Information Technology";
- var formattedRole = HTMLheaderRole.replace("%data%", role);
-  
- $("#header").prepend(formattedRole);
- $("#header").prepend(formattedName);
- 
- var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
- 
- //$("#main").append(skills);
- 
+var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
+
  var bio= {
-   "name"="Nicole",
+   "name"="Nicole Geiger",
    "role"=role,
    "contacts"={
       "email"="twirlbug@gmail.com",
@@ -24,6 +11,7 @@ var role = "Information Technology";
    "welcomeMessage"= "Greetings",
    "skills"= skills
  };
+
 
 var work= {};
 work.position= "student worker";
@@ -42,3 +30,15 @@ var education={
 }
 
 
+var projects={
+ "project":[
+  {
+     "name":"Tennis App",
+     "type":"Android App"
+  }
+  {
+   "name": "Hello World",
+   "type": "Java"
+  }
+  ]
+}

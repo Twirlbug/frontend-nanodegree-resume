@@ -25,8 +25,8 @@ var role = "Information Technology";
  };
  bio.skills= skills;
  
- if(skills.length > 0) {
-  $("#main").append(skills);
+ //if(skills.length > 0) {
+ // $("#main").append(skills);
  //$("#header").append(HTMLskillsStart);
  
  //var formattedSkill=HTMLskills.replace("%data%", skills[0]);

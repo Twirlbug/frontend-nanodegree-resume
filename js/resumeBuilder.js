@@ -18,6 +18,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
   $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
 	
+inName("Nicole Geiger");	
 function inName(name){
 name  = name.trim().split(" ");
 console.log(name);

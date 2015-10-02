@@ -11,7 +11,11 @@ var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
    "welcomeMessage"= "Greetings",
    "skills"= skills
  };
-
+ 
+var formatedName=HTMLheaderName.replace("%data%", bio.name);
+$("#header").append(formatedName);
+var formatedRole=HTMLheaderRole.replace("%data%", bio.role);
+$("#header").append(formatedRole);
 
 var work= {
  "jobs":[

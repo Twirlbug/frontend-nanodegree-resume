@@ -5,7 +5,7 @@ This is empty on purpose! Your code to build the resume will go here.
 
  //$("#main").append("Nicole Geiger ");
 var role = "  Information Technology";
- var formattedRole = HTMLheaderName.replace("%data%", role);
+ var formattedRole = HTMLheaderRole.replace("%data%", role);
   
- $("#header").append(formattedRole);
+ $("#header").prepend(formattedRole);
  $("#header").prepend(formattedName);

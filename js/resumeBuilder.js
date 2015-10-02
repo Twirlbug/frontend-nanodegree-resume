@@ -46,8 +46,23 @@ var work= {
 "position": "student worker",
 "employer":"ATS",
 "years":3
+},
+{
+"position": "Assistant",
+"employer":"Trancendental Golf",
+"years":.5
 }
 ]
+}
+
+for (job in work.jobs){
+$("#workExperience").append(HTMLworkStart);
+
+var formattedEmployer = HTMLworkEmployer.replace("%data%, work.jobs[job].employer);
+var formattedTitle = HTMLworkTitle.replace("%data%, work.jobs[job].position);
+var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+$(".work-entry:last").append(formattedEmployerTitle);
 }
 
 var education={

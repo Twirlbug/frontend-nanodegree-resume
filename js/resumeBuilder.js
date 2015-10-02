@@ -2,12 +2,12 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
-  $("#header").prepend(formattedName);
+
 
  //$("#main").append("Nicole Geiger ");
 
   
- $("#header").prepend(formattedRole);
+
 
  
  var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
@@ -15,16 +15,38 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
  //$("#main").append(skills);
  var role = "Info Technology";
  var formattedRole = HTMLheaderRole.replace("%data%", role);
+  $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
  
  var bio= {
    "name":"Nicole",
    "role":"Information Technology",
    "contacts":{
       "email":"twirlbug@gmail.com",
-      "github":"Twirlbug"},
-  "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg",
-   "skills": skills
+      "github":"Twirlbug",
+	  "mobile":"262-748-5667",
+	  "location":"Kenosha, Wi"},
+ "skills": skills
  }
+ 
+ var img = document.createElement("img");
+img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
+img.style.width = '10%'
+img.style.height = 'auto'
+var src = document.getElementById("header");
+src.appendChild(img);
+  //var formattedpic = HTMLbioPic.replace("%data%",  bio.contacts.biopic);
+  //$("#header").append(formattedpic);
+  
+  var formattedEmail = HTMLemail.replace("%data%",  bio.contacts.email);
+  $("#header").append(formattedEmail);
+  var formattedMobile = HTMLmobile.replace("%data%",  bio.contacts.mobile);
+  $("#header").append(formattedMobile);
+  var formattedgithub = HTMLgithub.replace("%data%",  bio.contacts.github);
+  $("#header").append(formattedgithub);
+  var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
+  $("#header").append(formattedLocation);
+  
   
 
 if(bio.skills.length > 0){
@@ -46,8 +68,23 @@ var work= {
 "position": "student worker",
 "employer":"ATS",
 "years":3
+},
+{
+"position": "Assistant",
+"employer":"Trancendental Golf",
+"years":.5
 }
 ]
+}
+
+for (job in work.jobs){
+$("#workExperience").append(HTMLworkStart);
+
+var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
+var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+$(".work-entry:last").append(formattedEmployerTitle);
 }
 
 var education={

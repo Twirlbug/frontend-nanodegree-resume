@@ -124,7 +124,7 @@ var education={
 }
 
 var projects={
-    "programs": [
+    "projects": [
         {
             "name": "Tennis App",
             "type": "Android app",
@@ -140,14 +140,14 @@ var projects={
 }
 
 function displayProjects(){
-	for (program in projects.program){
+	for (project in projects.projects){
 		$("#projects").append(HTMLprojectsStart);
 		
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.programs.name);
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects.name);
 		$(".program-entry:last").append(formattedTitle);
-		var formattedDates = HTMLprojectDates.replace("%data%", projects.programs.date);
+		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects.date);
 		$(".program-entry:last").append(formattedDates);
-		var formattedDesc = HTMLprojectDescription.replace("%data%", projects.programs.type);
+		var formattedDesc = HTMLprojectDescription.replace("%data%", projects.projects.type);
 		$(".program-entry:last").append(formattedDesc);
 	
 	}

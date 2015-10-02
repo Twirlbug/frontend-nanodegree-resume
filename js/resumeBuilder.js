@@ -2,14 +2,14 @@ var role = "Information Technology";
 var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
 
  var bio= {
-   "name"="Nicole Geiger",
-   "role"=role,
-   "contacts"={
-      "email"="twirlbug@gmail.com",
-      "github"="Twirlbug"},
-   "biopic"="https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832",
-   "welcomeMessage"= "Greetings",
-   "skills"= skills
+   "name":"Nicole Geiger",
+   "role":role,
+   "contacts":{
+      "email":"twirlbug@gmail.com",
+      "github":"Twirlbug"},
+   "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832",
+   "welcomeMessage": "Greetings",
+   "skills": skills
  };
  
 var formatedName=HTMLheaderName.replace("%data%", bio.name);

@@ -4,19 +4,19 @@ var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
  var bio= {
    "name":"Nicole Geiger",
    "role":role,
-   //"contacts":{
-     // "email":"twirlbug@gmail.com",
-      //"github":"Twirlbug"
+   "contacts":{
+      "email":"twirlbug@gmail.com",
+      "github":"Twirlbug"
     
-   //},
+   },
    "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg",
    "welcomeMessage": "Greetings",
    "skills": skills
  };
  
-var formatedName=HTMLheaderName.replace("%data%", bio.name);
+var formatedName=HTMLheaderName.replace("%data%", "Nicole Geiger");
 $("#header").append(formatedName);
-var formatedRole=HTMLheaderRole.replace("%data%", bio.role);
+var formatedRole=HTMLheaderRole.replace("%data%", role);
 $("#header").append(formatedRole);
 /*
 var work= {
@@ -54,7 +54,7 @@ var projects={
   }
   ]
 }
-*/
+
 
 if(bio.skills.length>0){
  $("#header").append(HTMLskillsStart);
@@ -67,8 +67,8 @@ if(bio.skills.length>0){
  formattedSkill=HTMLskills.replace("%data%", bio.skills[3]);
  $("#skills").append(formattedSkill);
 }
+*/
 
-/*
 
 for (jobs in work.jobs){
  $(#workExperience).append(HTMLworkStart);
@@ -77,5 +77,5 @@ for (jobs in work.jobs){
    var formatEmpTitle = formatEmployer+formatTitle;
    $(".work-entry:last").append(formatEmptitle);
 }
-*/
+
 

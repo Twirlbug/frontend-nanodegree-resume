@@ -25,18 +25,19 @@ var role = "Information Technology";
  };
  bio.skills= skills;
  
-/* if(skills.length > 0) {
- $("#header").append(HTMLskillsStart);
+ if(skills.length > 0) {
+  $("#main").append(skills);
+ //$("#header").append(HTMLskillsStart);
  
- var formattedSkill=HTMLskills.replace("%data%", skills[0]);
- $("#skills").append(formattedSkill);
- formattedSkill=HTMLskills.replace("%data%", skills[1]);
- $("#skills").append(formattedSkill);
- formattedSkill=HTMLskills.replace("%data%", skills[2]);
- $("#skills").append(formattedSkill);
- formattedSkill=HTMLskills.replace("%data%", skills[3]);
- $("#skills").append(formattedSkill);
-}*/
+ //var formattedSkill=HTMLskills.replace("%data%", skills[0]);
+// $("#skills").append(formattedSkill);
+// formattedSkill=HTMLskills.replace("%data%", skills[1]);
+ //$("#skills").append(formattedSkill);
+ //formattedSkill=HTMLskills.replace("%data%", skills[2]);
+ //$("#skills").append(formattedSkill);
+ //formattedSkill=HTMLskills.replace("%data%", skills[3]);
+// $("#skills").append(formattedSkill);
+}
 
 var work= {
  "jobs":[

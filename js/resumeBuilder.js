@@ -46,3 +46,17 @@ var education={
     ]
 }
 
+
+var programs={
+    "programs": [
+        {
+            "name": "Tennis App",
+            "type": "Android app",
+        }
+        {
+            "name": "Hello World",
+            "type": "Java",
+        }
+        
+    ]
+}

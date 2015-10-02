@@ -68,11 +68,15 @@ var work= {
   {
 "position": "student worker",
 "employer":"ATS",
+"dates":"2013-2015"
+"des": "Desk worker"
 "years":3
 },
 {
 "position": "Assistant",
 "employer":"Trancendental Golf",
+"dates":"2012-2012"
+"des": "Junior Pro"
 "years":.5
 }
 ]
@@ -84,8 +88,13 @@ $("#workExperience").append(HTMLworkStart);
 var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
 var formattedEmployerTitle = formattedEmployer + formattedTitle;
-
 $(".work-entry:last").append(formattedEmployerTitle);
+
+var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+$(".work-entry:last").append(formattedDates);
+
+var formattedDesc = HTMLworkDescription.replace("%data%", work.jobs[job].desc);
+$(".work-entry:last").append(formattedDesc);
 }
 
 var education={

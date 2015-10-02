@@ -141,7 +141,7 @@ var projects={
 
 function displayProjects(){
 	for (project in projects.projects){
-		$("#projects").append(HTMLprojectsStart);
+		$("#projects").append(HTMLprojectStart);
 		
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].name);
 		$(".program-entry:last").append(formattedTitle);

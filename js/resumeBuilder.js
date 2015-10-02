@@ -33,7 +33,7 @@ var work= {
 "years":3;
 }
 ]
-};
+}
 
 var education={
     "schools": [

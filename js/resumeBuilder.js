@@ -14,7 +14,7 @@ var role = "Information Technology";
  
  $("#main").append(skills);
  
- var bio= {
+/* var bio= {
    "name"="Nicole",
    "role"=role,
    "contacts"={
@@ -24,3 +24,4 @@ var role = "Information Technology";
    "welcomeMessage"= "Greetings",
    "skills"= skills
  };
+*/

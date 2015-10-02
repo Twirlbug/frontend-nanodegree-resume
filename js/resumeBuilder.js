@@ -1,11 +1,11 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-
+var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
+  $("#header").prepend(formattedName);
 
  //$("#main").append("Nicole Geiger ");
-var role = "Information Technology";
- var formattedRole = HTMLheaderRole.replace("%data%", role);
+
   
  $("#header").prepend(formattedRole);
 
@@ -13,6 +13,8 @@ var role = "Information Technology";
  var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
  
  //$("#main").append(skills);
+ var role = "Info Technology";
+ var formattedRole = HTMLheaderRole.replace("%data%", role +bio.skills.lenght);
  
  var bio= {
    "name":"Nicole",
@@ -23,9 +25,8 @@ var role = "Information Technology";
   "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg",
    "skills": skills
  }
-  var formattedName = HTMLheaderName.replace("%data%", bio.skills.length);
-  $("#header").prepend(formattedName);
- $("#main").append();
+  
+
 if(bio.skills.length > 0){
  $("#header").append(HTMLskillsStart);
  var formattedSkill=HTMLskills.replace("%data%", bio.skills[0]);

@@ -81,7 +81,7 @@ var work= {
 }
 ]
 }
-var displayWork=function(){
+function displayWork(){
 for (job in work.jobs){
 $("#workExperience").append(HTMLworkStart);
 

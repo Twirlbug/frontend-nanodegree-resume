@@ -13,10 +13,16 @@ var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
  };
 
 
-var work= {};
-work.position= "student worker";
-work.employer="ATS";
-work.years=3;
+var work= {
+ "jobs":[
+  {
+"position": "student worker";
+"employer"="ATS";
+"employerTitle"="boss";
+"years"=3;
+}
+]
+};
 
 var education={
     "schools": [
@@ -41,4 +47,24 @@ var projects={
    "type": "Java"
   }
   ]
+}
+
+
+if(bio.skills.length>0){
+ $("#header").append(HTMLskillsStart);
+ var formattedSkill=HTMLskills.replace("%data%", bio.skills[0]);
+ $("#skills").append(formattedSkill);
+ formattedSkill=HTMLskills.replace("%data%", bio.skills[1]);
+ $("#skills").append(formattedSkill);
+ formattedSkill=HTMLskills.replace("%data%", bio.skills[2]);
+ $("#skills").append(formattedSkill);
+ formattedSkill=HTMLskills.replace("%data%", bio.skills[3]);
+ $("#skills").append(formattedSkill);
+}
+
+
+for (jobs in work.jobs){
+ $(#workExperience).append(HTMLworkStart);
+ var formatEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+  var formatTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
 }

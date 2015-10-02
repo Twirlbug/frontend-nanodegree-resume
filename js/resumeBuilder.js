@@ -18,7 +18,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
   $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
 	
-inName("Nicole Geiger");	
+	
 function inName(name){
 name  = name.trim().split(" ");
 console.log(name);
@@ -26,7 +26,7 @@ name[1] = name[1].toUpperCase();
 name[0]= name[0].slice(0,1).toUpperCase()+name[0].slice(1).toLowerCase();
 return name[0]+" "+name[1];
 }
-
+inName("Nicole Geiger");
 $('#main).append(internationalizeButton);
  
  var bio= {

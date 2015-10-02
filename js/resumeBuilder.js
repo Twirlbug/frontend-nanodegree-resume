@@ -10,9 +10,9 @@ var role = "Information Technology";
  $("#header").prepend(formattedRole);
  $("#header").prepend(formattedName);
  
- var skills = ["Coding","Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
+ var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
  
- //
+ //$("#main").append(skills);
  
  var bio= {
    "name":"Nicole",
@@ -24,20 +24,6 @@ var role = "Information Technology";
   // "skills": skills
  };
  bio.skills= skills;
- 
- //if(skills.length > 0) {
- // $("#main").append(skills);
- //$("#header").append(HTMLskillsStart);
- 
- //var formattedSkill=HTMLskills.replace("%data%", skills[0]);
-// $("#skills").append(formattedSkill);
-// formattedSkill=HTMLskills.replace("%data%", skills[1]);
- //$("#skills").append(formattedSkill);
- //formattedSkill=HTMLskills.replace("%data%", skills[2]);
- //$("#skills").append(formattedSkill);
- //formattedSkill=HTMLskills.replace("%data%", skills[3]);
-// $("#skills").append(formattedSkill);
-}
 
 var work= {
  "jobs":[

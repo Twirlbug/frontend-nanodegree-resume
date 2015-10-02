@@ -9,3 +9,7 @@ var role = "Information Technology";
   
  $("#header").prepend(formattedRole);
  $("#header").prepend(formattedName);
+ 
+ var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
+ 
+ $("#main").append(skills);

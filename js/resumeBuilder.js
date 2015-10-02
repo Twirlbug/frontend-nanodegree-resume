@@ -4,21 +4,10 @@ This is empty on purpose! Your code to build the resume will go here.
 var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
 
 
-<<<<<<< HEAD
- //$("#main").append("Nicole Geiger");
- var role = "Information Technology";
- var formattedRole = HTMLheaderName.replace("%data%", role);
-
-=======
  //$("#main").append("Nicole Geiger ");
 
   
-<<<<<<< HEAD
->>>>>>> master
- $("#header").prepend(formattedRole);
-=======
 
->>>>>>> master
 
  
  var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];

@@ -99,6 +99,9 @@ $(".work-entry:last").append(formattedDesc);
 
 }
 
+
+displayWork();
+
 var education={
     "schools": [
         {

@@ -45,13 +45,13 @@ $('#main).append(internationalizeButton);*/
   //$("#header").append(formattedpic);
 
   var formattedEmail = HTMLemail.replace("%data%",  bio.contacts.email);
-  $("#header").append(formattedEmail);
+  $("#topContacts").append(formattedEmail);
   var formattedMobile = HTMLmobile.replace("%data%",  bio.contacts.mobile);
   //$("#header").append(formattedMobile);
   var formattedgithub = HTMLgithub.replace("%data%",  bio.contacts.github);
-  $("#header").append(formattedMobile, formattedgithub);
+  $("#topContacts").append(formattedMobile, formattedgithub);
   var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
-  $("#header").append(formattedLocation);
+  $("#topContacts").append(formattedLocation);
   var img = document.createElement("img");
   
  

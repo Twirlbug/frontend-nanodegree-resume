@@ -42,7 +42,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
   var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
   $("#header").append(formattedLocation);
   var img = document.createElement("img");
-  </dif>
+  </div>
 img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
 img.style.width = '10%'
 img.style.height = 'auto'

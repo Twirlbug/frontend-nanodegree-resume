@@ -24,17 +24,16 @@ var role = "Information Technology";
   // "skills": skills
  };
  bio.skills= skills;
- $("#main").append(bio.skills);
- /*if(bio.skills.length > 0) {
+ if(skills.length > 0) {
  $("#header").append(HTMLskillsStart);
  
- var formattedSkill=HTMLskills.replace("%data%", bio.skills[0]);
+ var formattedSkill=HTMLskills.replace("%data%", skills[0]);
  $("#skills").append(formattedSkill);
- formattedSkill=HTMLskills.replace("%data%", bio.skills[1]);
+ formattedSkill=HTMLskills.replace("%data%", skills[1]);
  $("#skills").append(formattedSkill);
- formattedSkill=HTMLskills.replace("%data%", bio.skills[2]);
+ formattedSkill=HTMLskills.replace("%data%", skills[2]);
  $("#skills").append(formattedSkill);
- formattedSkill=HTMLskills.replace("%data%", bio.skills[3]);
+ formattedSkill=HTMLskills.replace("%data%", skills[3]);
  $("#skills").append(formattedSkill);*/
 }
 

@@ -99,7 +99,6 @@ $(".work-entry:last").append(formattedDesc);
 
 }
 
-
 displayWork();
 
 var education={
@@ -112,7 +111,6 @@ var education={
         }
     ]
 }
-
 
 var programs={
     "programs": [
@@ -127,3 +125,12 @@ var programs={
         
     ]
 }
+
+$(document).click(function(loc){
+var x = loc.pageX;
+var y = loc.pageY;
+
+logClicks(x,y);
+});
+
+

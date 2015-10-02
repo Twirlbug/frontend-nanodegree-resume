@@ -26,9 +26,16 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
       "github":"Twirlbug",
 	  "mobile":"262-748-5667",
 	  "location":"Kenosha, Wi"},
-  "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832",
-   "skills": skills
+ "skills": skills
  }
+ 
+ var img = document.createElement("img");
+img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
+
+var src = document.getElementById("header");
+src.appendChild(img);
+  //var formattedpic = HTMLbioPic.replace("%data%",  bio.contacts.biopic);
+  //$("#header").append(formattedpic);
   
   var formattedEmail = HTMLemail.replace("%data%",  bio.contacts.email);
   $("#header").append(formattedEmail);
@@ -38,6 +45,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
   $("#header").append(formattedgithub);
   var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
   $("#header").append(formattedLocation);
+  
   
 
 if(bio.skills.length > 0){

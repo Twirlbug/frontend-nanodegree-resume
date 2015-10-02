@@ -21,13 +21,21 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
    "role":"Information Technology",
    "contacts":{
       "email":"twirlbug@gmail.com",
-      "github":"Twirlbug"},
-  "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg",
+      "github":"Twirlbug"
+	  "mobile":"262-748-5667"
+	  "location":"Kenosha, Wi"},
+  "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832",
    "skills": skills
  }
   
-  var formattedMobile = HTMLemail.replace("%data%",  bio.contacts.email);
-  $("#header").prepend(formattedMobile);
+  var formattedEmail = HTMLemail.replace("%data%",  bio.contacts.email);
+  $("#header").append(formattedEmail);
+  var formattedMobile = HTMLmobile.replace("%data%",  bio.contacts.mobile);
+  $("#header").append(formattedMobile);
+  var formattedgithub = HTMLgithub.replace("%data%",  bio.contacts.github);
+  $("#header").append(formattedgithub);
+  var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
+  $("#header").append(formattedLocation);
   
 
 if(bio.skills.length > 0){

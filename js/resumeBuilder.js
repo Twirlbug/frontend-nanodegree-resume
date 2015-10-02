@@ -123,19 +123,35 @@ var education={
     ]
 }
 
-var programs={
+var projects={
     "programs": [
         {
             "name": "Tennis App",
-            "type": "Android app"
+            "type": "Android app",
+			"date":"Sept. 2015"
         },
         {
             "name": "Hello World",
-            "type": "Java"
+            "type": "Java",
+			"date":"Dec. 2014"
         }
         
     ]
 }
+
+projects.display= function(){
+	for (program in projects.program){
+		$("#projects").append(HTMLprojectsStart);
+		
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.programs.name);
+		$(".program-entry:last").append(formattedTitle);
+		var formattedDates = HTMLprojectDates.replace("%data%", projects.programs.date);
+		$(".program-entry:last").append(formattedDates);
+		var formattedDesc = HTMLprojectDescription.replace("%data%", projects.programs.type);
+		$(".program-entry:last").append(formattedDesc);
+	
+	}
+	}
 
 $(document).click(function(loc){
 var x = loc.pageX;

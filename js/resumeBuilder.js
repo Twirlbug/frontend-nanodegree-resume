@@ -23,6 +23,18 @@ var role = "Information Technology";
   "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg",
    "skills": skills
  }
+ 
+if(bio.skills.length > 0){
+ $("#header").append(HTMLskillsStart);
+ var formattedSkill=HTMLskills.replace("%data%", bio.skills[0]);
+ $("#skills").append(formattedSkill);
+ formattedSkill=HTMLskills.replace("%data%", bio.skills[1]);
+ $("#skills").append(formattedSkill);
+ formattedSkill=HTMLskills.replace("%data%", bio.skills[2]);
+ $("#skills").append(formattedSkill);
+ formattedSkill=HTMLskills.replace("%data%", bio.skills[3]);
+ $("#skills").append(formattedSkill);
+}
 
 
 var work= {

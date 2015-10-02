@@ -22,7 +22,7 @@ var role = "Information Technology";
       "github":"Twirlbug"},
   "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg"
   // "skills": skills
- };
+ }
  //bio.skills= skills;
 
 var work= {

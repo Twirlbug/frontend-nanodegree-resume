@@ -139,7 +139,7 @@ var projects={
     ]
 }
 
-projects.display= function(){
+function displayProjects(){
 	for (program in projects.program){
 		$("#projects").append(HTMLprojectsStart);
 		
@@ -153,7 +153,7 @@ projects.display= function(){
 	}
 	}
 	
-	projects.display();
+	displayProjects();
 
 $(document).click(function(loc){
 var x = loc.pageX;

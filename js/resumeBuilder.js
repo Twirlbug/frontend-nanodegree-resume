@@ -7,7 +7,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
  //$("#main").append("Nicole Geiger ");
 
   
- $("#header").prepend(formattedRole);
+
 
  
  var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
@@ -15,6 +15,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
  //$("#main").append(skills);
  var role = "Info Technology";
  var formattedRole = HTMLheaderRole.replace("%data%", role);
+  $("#header").prepend(formattedRole);
  
  var bio= {
    "name":"Nicole",

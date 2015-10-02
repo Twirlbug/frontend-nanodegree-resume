@@ -36,7 +36,7 @@ $('#main).append(internationalizeButton);*/
       "email":"twirlbug@gmail.com",
       "github":"Twirlbug",
 	  "mobile":"262-748-5667",
-	  "location":"Kenosha, Wi"},
+	  "location":"Pleasant Prairie, Wisconsin"},
  "skills": skills
  }
  
@@ -77,6 +77,7 @@ if(bio.skills.length > 0){
 var work= {
  "jobs":[
   {
+ "location":"Kenosha, Wisconsin",
 "position": "Extra Hand",
 "employer":"PLE",
 "dates":"2013-2014",
@@ -84,6 +85,7 @@ var work= {
 "years":1
 },
 {
+"location":"Pleasant Prairie, Wisconsin",
 "position": "Assistant",
 "employer":"Trancendental Golf",
 "dates":"2012-2012",
@@ -116,7 +118,7 @@ var education={
     "schools": [
         {
             "name": "Cornell College",
-            "city": "Mount Vernon, IA, US",
+            "location": "Mount Vernon, IA, US",
             "degree": "BA",
             "major": "Computer Science"
         }

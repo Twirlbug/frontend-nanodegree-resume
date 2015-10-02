@@ -152,6 +152,8 @@ projects.display= function(){
 	
 	}
 	}
+	
+	projects.display();
 
 $(document).click(function(loc){
 var x = loc.pageX;

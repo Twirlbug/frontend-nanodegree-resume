@@ -53,6 +53,7 @@ $('#main).append(internationalizeButton);*/
   var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
   $("#header").append(formattedLocation);
   var img = document.createElement("img");
+  
  
 img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
 img.style.width = '10%'
@@ -97,7 +98,7 @@ var work= {
 function displayWork(){
 for (job in work.jobs){
 $("#workExperience").append(HTMLworkStart);
-
+var formattedLoc = HTMLworkLocation.replace("%data%", work.jobs[job].location)
 var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
 var formattedEmployerTitle = formattedEmployer + formattedTitle;

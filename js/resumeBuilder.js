@@ -1,7 +1,7 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
- var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
+
 
  //$("#main").append("Nicole Geiger ");
 var role = "Information Technology";
@@ -23,8 +23,8 @@ var role = "Information Technology";
   "biopic":"https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg",
    "skills": skills
  }
- 
-  $("#header").prepend(bio.skills.length);
+  var formattedName = HTMLheaderName.replace("%data%", bio.skills.length);
+  $("#header").prepend(formattedName);
  $("#main").append();
 if(bio.skills.length > 0){
  $("#header").append(HTMLskillsStart);

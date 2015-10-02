@@ -55,9 +55,9 @@ $('#main).append(internationalizeButton);*/
   var img = document.createElement("img");
   
  
-img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
-img.style.width = '10%'
-img.style.height = 'auto'
+img.src =  "https://media.licdn.com/media/AAEAAQAAAAAAAAKDAAAAJGNkNTkwNDY3LTVmZGQtNDYxZi04OGQyLTE3ZTkzMDg2ODNkNw.jpg";
+//img.style.width = '10%'
+//img.style.height = 'auto'
 var src = document.getElementById("header");
 src.appendChild(img);
   

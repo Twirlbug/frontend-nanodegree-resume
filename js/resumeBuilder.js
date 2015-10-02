@@ -12,7 +12,7 @@ var role = "Information Technology";
  
  var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
  
- $("#main").append(skills);
+ //$("#main").append(skills);
  
  var bio= {
    "name"="Nicole",
@@ -24,4 +24,21 @@ var role = "Information Technology";
    "welcomeMessage"= "Greetings",
    "skills"= skills
  };
+
+var work= {};
+work.position= "student worker";
+work.employer="ATS";
+work.years=3;
+
+var education={
+    "schools": [
+        {
+            "name": "Cornell College",
+            "city": "Mount Vernon, IA, US",
+            "degree": "BA",
+            "major": "Computer Science"
+        }
+    ]
+}
+
 

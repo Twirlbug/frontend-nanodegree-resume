@@ -29,24 +29,24 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
  "skills": skills
  }
  
- var img = document.createElement("img");
-img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
-img.style.width = '10%'
-img.style.height = 'auto'
-var src = document.getElementById("header");
-src.appendChild(img);
+ 
   //var formattedpic = HTMLbioPic.replace("%data%",  bio.contacts.biopic);
   //$("#header").append(formattedpic);
   
   var formattedEmail = HTMLemail.replace("%data%",  bio.contacts.email);
   $("#header").append(formattedEmail);
   var formattedMobile = HTMLmobile.replace("%data%",  bio.contacts.mobile);
-  $("#header").append(formattedMobile);
+  //$("#header").append(formattedMobile);
   var formattedgithub = HTMLgithub.replace("%data%",  bio.contacts.github);
-  $("#header").append(formattedgithub);
+  $("#header").append(formattedMobile, formattedgithub);
   var formattedLocation = HTMLlocation.replace("%data%",  bio.contacts.location);
   $("#header").append(formattedLocation);
-  
+  var img = document.createElement("img");
+img.src =  "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832";
+img.style.width = '10%'
+img.style.height = 'auto'
+var src = document.getElementById("header");
+src.appendChild(img);
   
 
 if(bio.skills.length > 0){

@@ -162,4 +162,4 @@ var y = loc.pageY;
 logClicks(x,y);
 });
 
-
+$("#mapDiv").append(googleMap);

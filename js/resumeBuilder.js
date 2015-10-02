@@ -51,11 +51,11 @@ var programs={
     "programs": [
         {
             "name": "Tennis App",
-            "type": "Android app",
-        }
+            "type": "Android app"
+        },
         {
             "name": "Hello World",
-            "type": "Java",
+            "type": "Java"
         }
         
     ]

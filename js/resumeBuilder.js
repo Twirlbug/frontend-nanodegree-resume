@@ -24,7 +24,8 @@ var role = "Information Technology";
   // "skills": skills
  };
  bio.skills= skills;
- if(skills.length > 0) {
+ 
+/* if(skills.length > 0) {
  $("#header").append(HTMLskillsStart);
  
  var formattedSkill=HTMLskills.replace("%data%", skills[0]);
@@ -34,8 +35,8 @@ var role = "Information Technology";
  formattedSkill=HTMLskills.replace("%data%", skills[2]);
  $("#skills").append(formattedSkill);
  formattedSkill=HTMLskills.replace("%data%", skills[3]);
- $("#skills").append(formattedSkill);*/
-}
+ $("#skills").append(formattedSkill);
+}/*
 
 var work= {
  "jobs":[

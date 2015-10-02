@@ -13,3 +13,12 @@ var role = "Information Technology";
  var skills = ["Java", "C", "Adobe CS6 Suite", "Microsoft Suite"];
  
  $("#main").append(skills);
+ 
+ var bio= {
+   "name"="Nicole",
+   "role"=role,
+   "contact info"="twirlbug@gmail.com",
+   "picture url"="https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11709736_837723032983625_8493569490743005868_n.jpg?oh=e87fec3462292493c7dfdaea0f758b87&oe=56918832",
+   "welcome message"= "Greetings",
+   "skills"= skills
+ };

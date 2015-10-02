@@ -2,7 +2,7 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
-  $("#header").prepend(formattedName);
+
 
  //$("#main").append("Nicole Geiger ");
 
@@ -16,6 +16,7 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
  var role = "Info Technology";
  var formattedRole = HTMLheaderRole.replace("%data%", role);
   $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
  
  var bio= {
    "name":"Nicole",

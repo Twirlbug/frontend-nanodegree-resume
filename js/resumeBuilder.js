@@ -8,4 +8,4 @@ var role = "Information Technology";
  var formattedRole = HTMLheaderName.replace("%data%", role);
   
  $("#header").prepend(formattedRole);
- $("#header").prepend(formattedName);
+ $("#header").append(formattedName);

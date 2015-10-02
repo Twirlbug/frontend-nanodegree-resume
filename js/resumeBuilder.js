@@ -14,7 +14,8 @@ var formattedName = HTMLheaderName.replace("%data%", "Nicole Geiger");
  
  //$("#main").append(skills);
  var role = "Info Technology";
- var formattedRole = HTMLheaderRole.replace("%data%", role +bio.skills.lenght);
+ var boilen =bio.skills.lenght;
+ var formattedRole = HTMLheaderRole.replace("%data%", boilen);
  
  var bio= {
    "name":"Nicole",
